@@ -1,0 +1,65 @@
+name: Collect SOCKS5 Proxies
+
+on:
+  # Run manually
+  workflow_dispatch:
+  
+  # Run every 2 hours
+  schedule:
+    - cron: '0 */2 * * *'
+  
+  # Run on push to main
+  push:
+    branches:
+      - main
+    paths:
+      - 'socks5_collector.py'
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Run collector
+        run: |
+          python socks5_collector.py
+      
+      - name: Show results
+        run: |
+          echo "📊 Collection Results:"
+          echo "======================"
+          if [ -f "socks5_raw.txt" ]; then
+            echo "Total proxies: $(wc -l < socks5_raw.txt)"
+            echo ""
+            echo "First 20 proxies:"
+            head -20 socks5_raw.txt
+          else
+            echo "No proxies collected!"
+          fi
+      
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add socks5_raw.txt socks5_sources_status.json
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🔄 Updated SOCKS5 proxy list [$(date +'%Y-%m-%d %H:%M UTC')]"
+            git push
+            echo "✅ Changes pushed!"
+          fi
