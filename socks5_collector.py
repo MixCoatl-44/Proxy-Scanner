@@ -152,7 +152,7 @@ PROXY_SOURCES = [
         "type": "text"
     },
     {
-        "name": "fahimscir);
+        "name": "fahimscirex",
         "url": "https://raw.githubusercontent.com/fahimscirex/proxybd/master/proxylist/socks5.txt",
         "type": "text"
     },
@@ -206,7 +206,6 @@ def extract_proxies_from_json(data, json_path=None):
     proxies = set()
     
     try:
-        # Navigate to the data array if path specified
         if json_path:
             for key in json_path.split('.'):
                 data = data[key]
@@ -214,7 +213,6 @@ def extract_proxies_from_json(data, json_path=None):
         if isinstance(data, list):
             for item in data:
                 if isinstance(item, dict):
-                    # Try common field names
                     ip = item.get('ip') or item.get('host') or item.get('address')
                     port = item.get('port')
                     
@@ -301,7 +299,7 @@ def collect_all():
         else:
             print(f"❌ {result.get('error', 'Failed')}")
         
-        time.sleep(0.5)  # Be nice to servers
+        time.sleep(0.5)
     
     return all_proxies, source_results
 
@@ -309,16 +307,13 @@ def save_results(proxies, source_results):
     """Save collected proxies"""
     print(f"\n💾 Saving results...")
     
-    # Sort proxies
     sorted_proxies = sorted(proxies)
     
-    # Save raw proxies
     with open(OUTPUT_FILE, 'w') as f:
         for proxy in sorted_proxies:
             f.write(f"{proxy}\n")
     print(f"   ✅ {OUTPUT_FILE}: {len(sorted_proxies)} proxies")
     
-    # Save source status
     status = {
         'collected_at': datetime.now().isoformat(),
         'total_proxies': len(sorted_proxies),
@@ -358,17 +353,14 @@ def main():
     """Main function"""
     start_time = time.time()
     
-    # Collect
     proxies, source_results = collect_all()
     
     if not proxies:
         print("\n❌ No proxies collected!")
         return
     
-    # Save
     save_results(proxies, source_results)
     
-    # Summary
     print_summary(proxies, source_results)
     
     elapsed = round(time.time() - start_time, 1)
