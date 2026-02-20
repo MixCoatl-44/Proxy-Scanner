@@ -1,6 +1,6 @@
 {
-  "collected_at": "2026-02-20T14:37:05.154906",
-  "total_proxies": 107833,
+  "collected_at": "2026-02-20T16:31:11.899057",
+  "total_proxies": 107203,
   "sources": [
     {
       "name": "ProxyScrape",
@@ -20,7 +20,7 @@
       "name": "OpenProxyList",
       "url": "https://openproxylist.xyz/socks5.txt",
       "success": true,
-      "count": 3447,
+      "count": 3444,
       "error": null
     },
     {
@@ -48,14 +48,14 @@
       "name": "monosans",
       "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
       "success": true,
-      "count": 39,
+      "count": 41,
       "error": null
     },
     {
       "name": "hookzof",
       "url": "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
       "success": true,
-      "count": 40,
+      "count": 22,
       "error": null
     },
     {
@@ -132,14 +132,14 @@
       "name": "proxifly",
       "url": "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/socks5/data.txt",
       "success": true,
-      "count": 376,
+      "count": 350,
       "error": null
     },
     {
       "name": "r00tee",
       "url": "https://raw.githubusercontent.com/r00tee/Proxy-List/main/Socks5.txt",
       "success": true,
-      "count": 4465,
+      "count": 3776,
       "error": null
     },
     {
@@ -153,7 +153,7 @@
       "name": "BreakingTechFr",
       "url": "https://raw.githubusercontent.com/BreakingTechFr/Proxy_Free/main/proxies/socks5.txt",
       "success": true,
-      "count": 5616,
+      "count": 5615,
       "error": null
     },
     {
@@ -188,14 +188,14 @@
       "name": "mmpx12",
       "url": "https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks5.txt",
       "success": true,
-      "count": 278,
+      "count": 279,
       "error": null
     },
     {
       "name": "zevtyardt",
       "url": "https://raw.githubusercontent.com/zevtyardt/proxy-list/main/socks5.txt",
       "success": true,
-      "count": 4096,
+      "count": 4100,
       "error": null
     },
     {
