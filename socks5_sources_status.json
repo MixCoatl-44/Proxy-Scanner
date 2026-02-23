@@ -1,6 +1,6 @@
 {
-  "collected_at": "2026-02-23T10:44:21.175899",
-  "total_proxies": 109770,
+  "collected_at": "2026-02-23T12:51:52.587972",
+  "total_proxies": 109440,
   "sources": [
     {
       "name": "ProxyScrape",
@@ -14,13 +14,13 @@
       "url": "https://www.proxy-list.download/api/v1/get?type=socks5",
       "success": false,
       "count": 0,
-      "error": "Timeout"
+      "error": "HTTP 522"
     },
     {
       "name": "OpenProxyList",
       "url": "https://openproxylist.xyz/socks5.txt",
       "success": true,
-      "count": 5236,
+      "count": 5230,
       "error": null
     },
     {
@@ -48,14 +48,14 @@
       "name": "monosans",
       "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
       "success": true,
-      "count": 48,
+      "count": 27,
       "error": null
     },
     {
       "name": "hookzof",
       "url": "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
       "success": true,
-      "count": 28,
+      "count": 21,
       "error": null
     },
     {
@@ -69,7 +69,7 @@
       "name": "roosterkid",
       "url": "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": null
     },
     {
@@ -104,7 +104,7 @@
       "name": "Anonym0usWork1221",
       "url": "https://raw.githubusercontent.com/Anonym0usWork1221/Free-Proxies/main/proxy_files/socks5_proxies.txt",
       "success": true,
-      "count": 208,
+      "count": 170,
       "error": null
     },
     {
@@ -132,14 +132,14 @@
       "name": "proxifly",
       "url": "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/socks5/data.txt",
       "success": true,
-      "count": 378,
+      "count": 341,
       "error": null
     },
     {
       "name": "r00tee",
       "url": "https://raw.githubusercontent.com/r00tee/Proxy-List/main/Socks5.txt",
       "success": true,
-      "count": 5559,
+      "count": 5798,
       "error": null
     },
     {
@@ -153,7 +153,7 @@
       "name": "BreakingTechFr",
       "url": "https://raw.githubusercontent.com/BreakingTechFr/Proxy_Free/main/proxies/socks5.txt",
       "success": true,
-      "count": 9351,
+      "count": 8557,
       "error": null
     },
     {
