@@ -1,6 +1,6 @@
 {
-  "collected_at": "2026-03-01T12:35:23.610716",
-  "total_proxies": 106460,
+  "collected_at": "2026-03-01T14:19:27.993176",
+  "total_proxies": 106078,
   "sources": [
     {
       "name": "ProxyScrape",
@@ -20,7 +20,7 @@
       "name": "OpenProxyList",
       "url": "https://openproxylist.xyz/socks5.txt",
       "success": true,
-      "count": 3306,
+      "count": 3252,
       "error": null
     },
     {
@@ -34,7 +34,7 @@
       "name": "TheSpeedX",
       "url": "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt",
       "success": true,
-      "count": 2177,
+      "count": 2131,
       "error": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "monosans",
       "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
       "success": true,
-      "count": 29,
+      "count": 52,
       "error": null
     },
     {
@@ -69,7 +69,7 @@
       "name": "roosterkid",
       "url": "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
       "success": true,
-      "count": 8,
+      "count": 10,
       "error": null
     },
     {
@@ -132,14 +132,14 @@
       "name": "proxifly",
       "url": "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/socks5/data.txt",
       "success": true,
-      "count": 396,
+      "count": 402,
       "error": null
     },
     {
       "name": "r00tee",
       "url": "https://raw.githubusercontent.com/r00tee/Proxy-List/main/Socks5.txt",
       "success": true,
-      "count": 3150,
+      "count": 3063,
       "error": null
     },
     {
@@ -153,7 +153,7 @@
       "name": "BreakingTechFr",
       "url": "https://raw.githubusercontent.com/BreakingTechFr/Proxy_Free/main/proxies/socks5.txt",
       "success": true,
-      "count": 6330,
+      "count": 5449,
       "error": null
     },
     {
@@ -195,7 +195,7 @@
       "name": "zevtyardt",
       "url": "https://raw.githubusercontent.com/zevtyardt/proxy-list/main/socks5.txt",
       "success": true,
-      "count": 3831,
+      "count": 3885,
       "error": null
     },
     {
