@@ -1,6 +1,6 @@
 {
-  "collected_at": "2026-04-01T02:00:48.917335",
-  "total_proxies": 121896,
+  "collected_at": "2026-04-01T04:52:24.870061",
+  "total_proxies": 121426,
   "sources": [
     {
       "name": "ProxyScrape",
@@ -20,7 +20,7 @@
       "name": "OpenProxyList",
       "url": "https://openproxylist.xyz/socks5.txt",
       "success": true,
-      "count": 4576,
+      "count": 3194,
       "error": null
     },
     {
@@ -34,7 +34,7 @@
       "name": "TheSpeedX",
       "url": "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt",
       "success": true,
-      "count": 1742,
+      "count": 2162,
       "error": null
     },
     {
@@ -48,14 +48,14 @@
       "name": "monosans",
       "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
       "success": true,
-      "count": 2559,
+      "count": 753,
       "error": null
     },
     {
       "name": "hookzof",
       "url": "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
       "success": true,
-      "count": 207,
+      "count": 193,
       "error": null
     },
     {
@@ -69,7 +69,7 @@
       "name": "roosterkid",
       "url": "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
       "success": true,
-      "count": 14,
+      "count": 9,
       "error": null
     },
     {
@@ -97,7 +97,7 @@
       "name": "zloi-user",
       "url": "https://raw.githubusercontent.com/zloi-user/hideip.me/main/socks5.txt",
       "success": true,
-      "count": 3691,
+      "count": 2517,
       "error": null
     },
     {
@@ -132,14 +132,14 @@
       "name": "proxifly",
       "url": "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/socks5/data.txt",
       "success": true,
-      "count": 3399,
+      "count": 1772,
       "error": null
     },
     {
       "name": "r00tee",
       "url": "https://raw.githubusercontent.com/r00tee/Proxy-List/main/Socks5.txt",
       "success": true,
-      "count": 5873,
+      "count": 5980,
       "error": null
     },
     {
