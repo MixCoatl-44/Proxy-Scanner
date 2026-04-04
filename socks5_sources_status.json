@@ -1,6 +1,6 @@
 {
-  "collected_at": "2026-04-04T01:44:24.142313",
-  "total_proxies": 112300,
+  "collected_at": "2026-04-04T04:12:22.047386",
+  "total_proxies": 113147,
   "sources": [
     {
       "name": "ProxyScrape",
@@ -14,13 +14,13 @@
       "url": "https://www.proxy-list.download/api/v1/get?type=socks5",
       "success": false,
       "count": 0,
-      "error": "Timeout"
+      "error": "HTTP 522"
     },
     {
       "name": "OpenProxyList",
       "url": "https://openproxylist.xyz/socks5.txt",
       "success": true,
-      "count": 2513,
+      "count": 1960,
       "error": null
     },
     {
@@ -34,7 +34,7 @@
       "name": "TheSpeedX",
       "url": "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt",
       "success": true,
-      "count": 2169,
+      "count": 1656,
       "error": null
     },
     {
@@ -48,14 +48,14 @@
       "name": "monosans",
       "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
       "success": true,
-      "count": 78,
+      "count": 48,
       "error": null
     },
     {
       "name": "hookzof",
       "url": "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
       "success": true,
-      "count": 87,
+      "count": 53,
       "error": null
     },
     {
@@ -69,7 +69,7 @@
       "name": "roosterkid",
       "url": "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
       "success": true,
-      "count": 10,
+      "count": 7,
       "error": null
     },
     {
@@ -97,7 +97,7 @@
       "name": "zloi-user",
       "url": "https://raw.githubusercontent.com/zloi-user/hideip.me/main/socks5.txt",
       "success": true,
-      "count": 209,
+      "count": 227,
       "error": null
     },
     {
@@ -132,14 +132,14 @@
       "name": "proxifly",
       "url": "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/socks5/data.txt",
       "success": true,
-      "count": 407,
+      "count": 388,
       "error": null
     },
     {
       "name": "r00tee",
       "url": "https://raw.githubusercontent.com/r00tee/Proxy-List/main/Socks5.txt",
       "success": true,
-      "count": 2831,
+      "count": 2633,
       "error": null
     },
     {
