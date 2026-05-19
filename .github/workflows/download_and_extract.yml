@@ -1,0 +1,37 @@
+name: Download and Extract SNI Spoofing RAR
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:   # allows manual trigger from GitHub UI
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install unrar
+        run: sudo apt-get update && sudo apt-get install -y unrar
+
+      - name: Download RAR file
+        run: |
+          curl -L -o sniff_tool.rar "https://tools.irbots.com/uploads/1779215034file_16854.rar"
+          ls -lh sniff_tool.rar
+
+      - name: Extract and list contents
+        run: |
+          mkdir -p extracted
+          unrar x sniff_tool.rar extracted/
+          echo "=== Archive Contents ==="
+          find extracted/ -type f -exec ls -lh {} \;
+          echo ""
+          echo "=== Text Files Preview ==="
+          find extracted/ -type f \( -name "*.txt" -o -name "*.json" -o -name "*.ini" -o -name "*.bat" -o -name "*.ps1" -o -name "*.conf" -o -name "*.yaml" -o -name "*.yml" -o -name "*.xml" \) -exec sh -c 'echo "--- $1 ---"; head -30 "$1"' _ {} \;
+
+      - name: Upload extracted folder as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sniff_extracted
+          path: extracted/
