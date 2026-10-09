@@ -211,6 +211,13 @@
       "success": true,
       "count": 500,
       "error": null
+    },
+    {
+      "name": "rcloak",
+      "url": "https://rcloak.com/api/proxies/raw?protocol=socks5",
+      "success": null,
+      "count": null,
+      "error": null
     }
   ]
 }
